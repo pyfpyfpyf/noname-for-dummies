@@ -1,6 +1,4 @@
-import { lib, game, ui, get, ai, _status } from "../../noname.js";
-game.import("extension",function(){
-	return {name:"金庸",content:function(config,pack){
+game.import("extension",function(lib,game,ui,get,ai,_status){return {name:"水浒",content:function(config,pack){
     
 },precontent:function(){
     
@@ -197,7 +195,7 @@ game.import("extension",function(){
                         },
                         content:function(){{
                             var stat = player.getStat().skill;
-                            delete stat.探囊_effect;
+                            delete stat.探囊;
                             game.log(player, "重置了技能", "#g【探囊】");
                             }
                         },
@@ -325,5 +323,4 @@ game.import("extension",function(){
     diskURL:"",
     forumURL:"",
     version:"1.0",
-},files:{"character":[],"card":[],"skill":[],"audio":[]}}
-});
+},files:{"character":["时迁.jpg","武松.jpg","张清.jpg"],"card":[],"skill":[],"audio":[]}}})
